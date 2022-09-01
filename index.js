@@ -96,7 +96,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
             if (e.target.classList.contains("wrongCase")) {
               vrai = false;
-               scr.innerHTML = "F5 pour rejouer"
               document.querySelector("#message").innerHTML = `Votre score est de: ${score}.`
               clearInterval(delais)
             }
@@ -121,7 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
       clearInterval(delais)
       vrai = false
       document.querySelector("#message").innerHTML = `Votre score est de: ${score}.`
-       scr.innerHTML = "F5 pour rejouer"
     }
   }
   // start.addEventListener("click", temps)
