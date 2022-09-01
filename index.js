@@ -96,8 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
             if (e.target.classList.contains("wrongCase")) {
               vrai = false;
-              document.getElementById("zone").style.backgroundColor = "black";
-              document.querySelector("#message").innerHTML = `Votre score est de: ${score}. F5 pour rejouer`
+               scr.innerHTML = "F5 pour rejouer"
+              document.querySelector("#message").innerHTML = `Votre score est de: ${score}.`
               clearInterval(delais)
             }
           }
@@ -120,8 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
      if (secondes < 1){
       clearInterval(delais)
       vrai = false
-      document.querySelector("#message").innerHTML = `Votre score est de: ${score}.F5 pour rejouer`
-      
+      document.querySelector("#message").innerHTML = `Votre score est de: ${score}.`
+       scr.innerHTML = "F5 pour rejouer"
     }
   }
   // start.addEventListener("click", temps)
