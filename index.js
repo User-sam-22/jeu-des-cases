@@ -117,21 +117,11 @@ document.addEventListener("DOMContentLoaded", () => {
       timer.innerHTML = "0" + secondes +"sec";
      }
      
-     
-    
      if (secondes < 1){
       clearInterval(delais)
       vrai = false
       document.querySelector("#message").innerHTML = `Votre score est de: ${score}.`
-      if (score< 10){
-        document.querySelector("#message").innerHTML = `Votre score est de: ${score}.  NUL!!!`
-      }
-      else if (score >10 || score< 15){
-        document.querySelector("#message").innerHTML = `Votre score est de: ${score}.  COOL!!!`
-      }
-      else{
-        document.querySelector("#message").innerHTML = "Flash c'est toi?"
-      }
+      
     }
   }
   // start.addEventListener("click", temps)
